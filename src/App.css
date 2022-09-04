@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  justify-content: center;
+}
+
+.title{
+  color: red;
+}
+
+input {
+  margin: 10px;
+}
+
+button {
+  margin: 5px;
+}
+
+.task {
+  font-size: 10px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 40%;
+  background-color: #777;
+  color: white;
+}
