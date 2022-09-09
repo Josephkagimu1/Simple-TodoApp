@@ -11,14 +11,20 @@ function App() {
     setTask('');
   }
 
+  function deleteTask(index){
+    var newList = taskList;
+    newList.splice(index,1);
+    setTaskList([...newList]);
+  }
+
   return (
     <div className="App">
       <h1 className='title'> Todo App </h1>
      <input type='text' onChange={(e) => {setTask(e.target.value)}} />
      <button onClick={AddTask}> Add </button>
 
-     {taskList.map((task) => {
-       return <Task task={task.task} />
+     {taskList.map((task, index) => {
+       return <Task task={task.task} deleteTask={deleteTask} index={index} />
      } )}
 
     </div>

@@ -26,3 +26,17 @@ button {
   background-color: #777;
   color: white;
 }
+
+
+/* part 2 */
+
+.delete-btn {
+  position: absolute;
+  margin-left: 110px;
+  margin-top: -40px;
+  background-color: red;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
