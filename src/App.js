@@ -11,7 +11,7 @@ function App() {
     setTask('');
   }
 
-  function deleteTask(index){
+  const deleteTask = (index) => {
     var newList = taskList;
     newList.splice(index,1);
     setTaskList([...newList]);
