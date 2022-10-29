@@ -32,6 +32,7 @@ function App() {
     setTaskList([...newList]);
   }
 
+  // Editing Task
   const handleEdit = (index) => {
     const editTask = taskList.find((i) => i.index === index);
     setTask(editTask.task);
